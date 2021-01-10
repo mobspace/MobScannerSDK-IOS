@@ -106,6 +106,8 @@ The SDK comes with RTU UI (Ready to use UI) feature. The design is optimal from 
 
 To use these ViewControllers add the target ViewController to the Storyboard of your app and assign corresponding Storyboard ID. Also make sure to assign Module as 'MobScannerSDK'. Note, please make sure to add 'ImageFilterViewController' to storyboard and assign Storyboard ID as 'ImageFilterViewController'.
 
+![](screen_shot/storyboard_add.png)
+
 
 ### CameraViewController
 Before using Camera or Photo Gallery, make sure that your App has necessary permissions as described above. 
