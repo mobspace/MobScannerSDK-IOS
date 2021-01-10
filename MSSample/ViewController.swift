@@ -12,6 +12,14 @@ import Photos
 import PDFKit
 
 class ViewController: UIViewController, InputImagePickerDelegate, DocumentReadyDelegate,SDKInitDelegate{
+    func onInputImagePicked(images: [String]) {
+        
+        let cropView = self.storyboard?.instantiateViewController(withIdentifier: "CropViewController") as! CropViewController
+               cropView.documentReadyDelegate = self
+               cropView.imgFiles = images
+               self.navigationController?.pushViewController(cropView, animated: true);
+    }
+    
     
     func onInitSuccess() {
         
@@ -41,15 +49,6 @@ class ViewController: UIViewController, InputImagePickerDelegate, DocumentReadyD
         
     }
     
-    
-    func onInputImageFinalized(images: [String]) {
-        
-        let cropView = self.storyboard?.instantiateViewController(withIdentifier: "CropViewController") as! CropViewController
-        cropView.delegate = self
-        cropView.imgFiles = images
-        self.navigationController?.pushViewController(cropView, animated: true);
-    }
-    
     @IBAction func galleryClicked(_ sender: Any) {
         
         let deviceImagePicker = DeviceImagerPicker()
@@ -72,7 +71,7 @@ class ViewController: UIViewController, InputImagePickerDelegate, DocumentReadyD
         
         MobScannerSDK.initialize(uuid: "32937f98-6e8e-451d-a932-fd64b9c7635e",apiKey: "0922c2075ed349eee0b54d610848aad1de285e36",initCallBack: self)
         
-        MobScannerSDK.setTheme(color: TestColor())
+        MobScannerSDK.setTheme(theme: TestColor())
     }
     
     private class TestColor: SDKColors{
