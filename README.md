@@ -168,12 +168,12 @@ Img2Pdf.createPDF(jpegFiles: outputImgFiles, outputFileName: "test.pdf", callbac
              // preview generated PDF
              
             let pdfView = PDFView(frame: self.view.bounds)
-                   self.view.addSubview(pdfView)
+            self.view.addSubview(pdfView)
 
-                   // Fit content in PDFView.
-                   pdfView.autoScales = true
+            // Fit content in PDFView.
+            pdfView.autoScales = true
 
-                   // Load Sample.pdf file.
+            // Load pdf file.
             pdfView.document = PDFDocument(url: pdfUrl!!)
                    
             print(FileManager.default.fileExists(atPath: pdfUrl!!.path) )
