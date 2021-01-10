@@ -1,5 +1,5 @@
 # MobScannerSDK for IOS 
-The Mobscanner SDK for IOS is the IOS  designed to perform faster image scanning and produce quality PDFs with few clicks. The SDK provides out of the box accurate, fast, and reliable mobile document scanning SDK for [Android] (https://github.com/mobspace/MobScannerSDK) and IOS. Use any smart device to quickly and accurately digitize the documents you need. Implement the Ready-To-Use UI (RTU UI) with only a few lines of code cuts down the development cost and time for the business. The SDK is written in Swift.
+The Mobscanner SDK for IOS is the IOS  designed to perform faster image scanning and produce quality PDFs with few clicks. The SDK provides out of the box accurate, fast, and reliable mobile document scanning SDK for [Android](https://github.com/mobspace/MobScannerSDK) and IOS. Use any smart device to quickly and accurately digitize the documents you need. Implement the Ready-To-Use UI (RTU UI) with only a few lines of code cuts down the development cost and time for the business. The SDK is written in Swift.
 
 ## Requirements
 Operating System
