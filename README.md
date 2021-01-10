@@ -1,5 +1,5 @@
 # MobScannerSDK for IOS 
-The Mobscanner SDK for IOS is the IOS  designed to perform faster image scanning and produce quality PDFs with few clicks. The SDK provides out of the box accurate, fast, and reliable mobile document scanning SDK for Android (https://github.com/mobspace/MobScannerSDK) and IOS. Use any smart device to quickly and accurately digitize the documents you need. Implement the Ready-To-Use UI (RTU UI) with only a few lines of code cuts down the development cost and time for the business. The SDK is written in Swift.
+The Mobscanner SDK for IOS is the IOS  designed to perform faster image scanning and produce quality PDFs with few clicks. The SDK provides out of the box accurate, fast, and reliable mobile document scanning SDK for [Android] (https://github.com/mobspace/MobScannerSDK) and IOS. Use any smart device to quickly and accurately digitize the documents you need. Implement the Ready-To-Use UI (RTU UI) with only a few lines of code cuts down the development cost and time for the business. The SDK is written in Swift.
 
 ## Requirements
 Operating System
@@ -106,9 +106,6 @@ The SDK comes with RTU UI (Ready to use UI) feature. The design is optimal from 
 
 To use these ViewControllers add the target ViewController to the Storyboard of your app and assign corresponding Storyboard ID. Also make sure to assign Module as 'MobScannerSDK'. Note, please make sure to add 'ImageFilterViewController' to storyboard and assign Storyboard ID as 'ImageFilterViewController'.
 
-However, the developer are allowed to make their own ViewControllers using the SDK custom views (discussed below). 
-
-
 
 ### CameraViewController
 Before using Camera or Photo Gallery, make sure that your App has necessary permissions as described above. 
@@ -184,4 +181,5 @@ Img2Pdf.createPDF(jpegFiles: outputImgFiles, outputFileName: "test.pdf", callbac
         })
 ```
 
-### Creating own ViewController
+### Support
+For any issue of the SDK please [write to us](mailto:blogtech90@gmail.com). Or you can create a github issue [here](https://github.com/bharatTV101/MobScannerSDK/issues)
