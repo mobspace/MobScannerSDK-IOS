@@ -4,7 +4,7 @@ The Mobscanner SDK for IOS is designed to perform faster image scanning and prod
 ## Requirements
 Operating System
 
-• IOS 13.0 and higher
+• IOS 11.0 and higher
 
 Hardware
 
